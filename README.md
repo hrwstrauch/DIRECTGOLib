@@ -189,7 +189,7 @@ Please use the following BibTeX entry, if you consider citing **DIRECTGOLib**:
 
 ## Changelogs
 
-### [v2.0](https://github.com/blockchain-group/DIRECTGOLib/releases/tag/v2.0) - (2024-09-01)
+### [v2.0](https://github.com/blockchain-group/DIRECTGOLib/releases/tag/v2.0) - (21-11-2024)
 
 **Upgraded**
 
@@ -220,7 +220,7 @@ Nine duplicated [box-constrained](https://github.com/blockchain-group/DIRECTGOLi
 
 - `PermFunction01.m`, `Trid.m`, `AlpineN2.m`, `Branin01.m`, `CrossFunction.m`, `CrossInTray.m`, `Schaffer1.m`, `Schaffer2.m`, `Schaffer3.m`, `Schaffer4.m`, `PermFunction02.m`, `HolderTable1.m`, `Shubert01.m`, `SumOfPowers.m`, `Trigonometric01.m`, `XinSheYang02.m`, `XinSheYang03.m`, `Csendes.m`
 
-### [v1.3](https://github.com/blockchain-group/DIRECTGOLib/releases/tag/v1.3) - (2023-06-15)
+### [v1.3](https://github.com/blockchain-group/DIRECTGOLib/releases/tag/v1.3) - (15-06-2023)
 
 **Added**
 
@@ -234,7 +234,7 @@ Two duplicated [linearly-constrained](https://github.com/blockchain-group/DIRECT
 
 - `Genocop11.m`, `hs035.m`
 
-### [v1.2](https://github.com/blockchain-group/DIRECTGOLib/releases/tag/v1.2) - (2022-06-06)
+### [v1.2](https://github.com/blockchain-group/DIRECTGOLib/releases/tag/v1.2) - (06-06-2022)
 
 **Added**
 
@@ -242,7 +242,7 @@ Two duplicated [linearly-constrained](https://github.com/blockchain-group/DIRECT
 
 - `AckleyN2.m`, `AckleyN3.m`, `AckleyN4.m`, `Adjiman.m`, `AlpineN1.m`,`BartelsConn.m`, `BiggsEXP2.m`, `BiggsEXP3.m`, `BiggsEXP4.m`, `BiggsEXP5.m`, `BiggsEXP6.m`, `Bird.m`, `Brad.m`, `Brown.m`, `Bukin4.m`, `CarromTable.m`, `ChenBird.m`, `ChenV.m`, `Chichinadze.m`, `ChungR.m`, `Cola.m`, `Cross_function.m`, `CrownedCross.m`, `Cube.m`,  `Cubic.m`, `Dejong.m`, `Dejong5.m`, `Dolan.m`, `Exponential.m`, `Exponential2.m`, `Exponential3.m`, `Giunta.m`, `Hartman4.m`, `HelicalValley.m`, `HimmelBlau.m`, `Layeb01.m`, `Layeb02.m`, `Layeb03.m`, `Layeb04.m`, `Layeb05.m`, `Layeb06.m`, `Layeb07.m`, `Layeb08.m`, `Layeb09.m`, `Layeb10.m`, `Layeb11.m`, `Layeb12.m`, `Layeb13.m`, `Layeb14.m`, `Layeb15.m`, `Layeb16.m`, `Layeb17.m`, `Layeb18.m`, `Leon.m`, `Levi13.m`, `ModSchaffer1.m`, `ModSchaffer2.m`, `ModSchaffer3.m`, `ModSchaffer4.m`, `Quadratic.m`, `SineEnvelope.m`, `Sinenvsin.m`, `TestTubeHolder.m`, `Trigonometric.m`, `Wood.m`, `WWavy.m`, `XinSheYajngN1.m`, `XinSheYajngN2.m`, `Zettl.m`
 
-### [v1.1](https://github.com/blockchain-group/DIRECTGOLib/releases/tag/v1.1) - (2022-04-26)
+### [v1.1](https://github.com/blockchain-group/DIRECTGOLib/releases/tag/v1.1) - (26-04-2022)
 
 **Added**
 
