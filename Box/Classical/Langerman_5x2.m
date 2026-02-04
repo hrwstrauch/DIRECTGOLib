@@ -1,10 +1,16 @@
-function y = Langermann(x)
+function y = Langerman_5x2(x)
 % -------------------------------------------------------------------------
-% MATLAB coding by: Linas Stripinis
-% Name:
-%   Langermann.m
+% Function: Langerman m=5, n=2
+% File: Langerman_5x2.m
+% Author (implementation): Linas Stripinis
 %
-% References:																							
+% Scientific provenance:
+% Primary reference:
+%  - Bersini, H., Dorigo, M. and Langerman, S. (1996) 'Results of the first 
+%    international contest on evolutionary optimization', IEEE International 
+%    Conf. on Evolutionary Computation, Nagoya, Japan, pp.611–615.
+%
+% Secondary reference:																								
 %  - Surjanovic, S., Bingham, D. (2013): Virtual library of simulation 
 %    experiments: Test functions and datasets. 
 %    URL: http://www.sfu.ca/~ssurjano/index.html	
@@ -12,11 +18,11 @@ function y = Langermann(x)
 %    URL: http://infinity77.net/global_optimization/index.html	
 %
 % Globally optimal solution:
-%   f = -4.15580929184778646857
-%   x = [2.79340220847131170956; 1.59723250151135420793]
+%   f* = -4.155809
+%   x* = [2.793402; 1.597233]
 %
 % Default variable bounds:
-%   0 <= x(i) <= 10, i = 1,...,n
+%   0 <= x(i) <= 10,  i = 1,...,n
 %
 % Problem Properties:
 %   n  = 2;
@@ -39,24 +45,14 @@ if nargin == 0
     y.libraries = [0, 1, 0, 1, 0, 0, 0, 0, 0, 0];
     return
 end
+if numel(x) ~= 2, error('Function is defined only for n = 2.'); end
 if size(x, 2) > size(x, 1), x = x'; end
 
-d = length(x);
-m = 5;
-c = [1, 2, 5, 2, 3];
+c = [1; 2; 5; 2; 3];
 A = [3, 5; 5, 2; 2, 1; 1, 4; 7, 9];
-outer = 0;
-for ii = 1:m
-    inner = 0;
-    for jj = 1:d
-        xj = x(jj);
-        Aij = A(ii, jj);
-        inner = inner + (xj - Aij)^2;
-    end
-    new = c(ii) * exp(-inner/pi) * cos(pi*inner);
-    outer = outer + new;
-end
-y = outer;
+
+D = sum((A - x.').^2, 2);    
+y = sum(c.*exp(-D/pi).*cos(pi*D));
 end
 
 function xl = get_xl(nx)
@@ -68,9 +64,9 @@ function xu = get_xu(nx)
 end
 
 function fmin = get_fmin(~)
-    fmin = -4.15580929184778646857;
+    fmin = -4.1558092918477865;
 end
 
 function xmin = get_xmin(~)
-    xmin = [2.79340220847131170956; 1.59723250151135420793];
+    xmin = [2.7934022071225773; 1.5972325032246983];
 end
